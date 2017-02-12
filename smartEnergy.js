@@ -6,7 +6,7 @@ http.createServer(function(req, res) {
     'Content-Type': 'text/html'
   });
   
-// How to pass result from python to node.js 
+//FIXME How to pass result from python to node.js 
   PythonShell.run('predict.py', function (err, results) {
      if (err) throw err;
      console.log('finished');
